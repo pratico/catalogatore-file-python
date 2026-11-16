@@ -1,72 +1,80 @@
-# Catalogatore File
+# File Cataloger — High-Speed Local Document Indexing Engine
 
-🇬🇧 / 🇺🇸 ENGLISH 
+🇬🇧 / 🇺🇸 **ENGLISH** | [🇮🇹 Vai alla versione in Italiano](#-italiano)
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-antoniangeloflore.com-0d6efd?style=flat-square)](https://antoniangeloflore.com)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Python%203.12%2B%20%7C%20SQLite-198754?style=flat-square)](https://github.com/pratico)
+[![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local%20%2F%20Zero--Cloud-dc3545?style=flat-square)](https://antoniangeloflore.com)
+
 ## Product Overview
 
-**File Cataloger** is a private, local application for Linux systems, accessible directly from the browser, designed to index, catalog, and search the entire contents of any folder on the system in seconds.
+**File Cataloger** is a private, local-first application for Linux systems, accessible directly from the browser, engineered to index, catalog, and search the entire contents of any folder hierarchy in seconds.
 
-It is designed for **SMEs, agencies, operations teams, and professionals** who manage large volumes of files spread across multiple paths and roots on a daily basis, and who need an immediate, orderly, and searchable view of their digital archive — without relying on external cloud services.
+It is built for **SMEs, agencies, operations teams, and professionals** who manage large volumes of files spread across multiple paths and root directories daily, and who need an immediate, structured, and searchable view of their digital archive—without relying on external cloud services or exposing sensitive data.
 
 ## The Problem Solved
 
-In every real company, manual file management generates hidden costs and concrete bottlenecks:
+In every real-world organization, manual file management generates hidden operational costs and concrete bottlenecks:
 
-- **Wasted search time:** minutes (often hours) spent each day searching for outdated documents, images, or versions in unorganized folders.
-- **Manual errors:** duplications, lost files, inconsistent classifications due to "memory" cataloging.
-- **Lack of visibility:** Unable to quickly answer questions like *"How many such files do we have?"* or *"where is the latest version located?"*.
-- **Dependence on external tools:** Cloud solutions that expose sensitive data and impose recurring costs.
+- **Wasted search time:** Minutes (often hours) lost every day searching for documents, assets, or outdated versions across unorganized folders.
+- **Manual errors:** Duplications, misplaced files, and inconsistent classifications caused by "memory-based" cataloging.
+- **Lack of visibility:** Inability to quickly answer operational questions such as *"How many files of this type do we have?"* or *"Where is the latest version stored?"*.
+- **Cloud vendor lock-in & privacy risks:** External cloud indexing tools that expose confidential corporate documents and impose recurring SaaS subscriptions.
 
-File Cataloger eliminates these frictions: a single scan transforms the local filesystem into a structured archive, searchable and sortable in real time.
+**File Cataloger** eliminates these frictions: a single scan transforms the local filesystem into a structured, persistent archive that can be queried and sorted in real time.
 
-## How It Works (User Operating Flow)
+## Operator Workflow
 
-The use is simple and immediate, from the operator's point of view:
+The workflow is straightforward and immediate from the operator's perspective:
 
-1. **Application Launch** — The user starts the service on their Linux computer and accesses the interface from the browser.
-2. **Choosing the folder to scan** — The user indicates the folder (or root path) to scan.
-3. **Automatic Scan** — The system recursively traverses the folder, detecting each file and subfolder, and records its main information (name, type, extension, size, date, path).
-4. **Applying Exclusions** — The user can configure exclusion rules to ignore irrelevant folders or file types, keeping the catalog clean and targeted.
-5. **Persistent Cataloging** — All results are saved in a structured local catalog, which remains available between subsequent sessions.
-6. **Search and Lookup** — The user instantly searches by name, extension, or path, and sorts the results by name, type, extension, size, date, path, or root.
-7. **Visual Preview** — For image files, you can preview directly from the interface, without opening external handlers.
+1. **Application Launch** — Start the lightweight local service on Linux and open the web interface in any browser.
+2. **Target Directory Selection** — Specify the folder or root path to scan.
+3. **Recursive Automated Scan** — The engine traverses the directory tree, detecting every file and subfolder and recording core metadata (name, type, extension, size, timestamp, full path).
+4. **Exclusion Rules** — Configure custom exclusion filters to ignore irrelevant system directories or file extensions, keeping the index clean and focused.
+5. **Persistent Local Cataloging** — All indexed records are stored in a structured local SQLite database, remaining instantly available across sessions.
+6. **Instant Search & Multi-Criteria Sorting** — Query files in real time by name, extension, or path, and sort results by name, type, extension, size, date, path, or root.
+7. **Integrated Visual Preview** — Preview image assets directly inside the web interface without launching external viewers.
 
-The end result: a complete, searchable and visually searchable archive, obtained with a few clicks and zero repetitive manual intervention.
+The result: a complete, searchable, and visually browsable archive obtained in a few clicks with zero repetitive manual work.
 
 ## Main Features & Operational Benefits (ROI)
 
 | Functionality | Operational Advantage |
 |---|---|
-| **Recursive Folder Scanning** | Complete indexing of entire archives in a single operation, without manual labor. |
-| **Persistent Cataloging** | Data remains saved and searchable over time: no repeated scans, no information loss. |
-| **Search by name, extension, and path** | Instant find of any file: from minutes of manual search to seconds. |
-| **Multi-criteria sorting** (name, type, extension, size, date, path, root) | Analyze and organize the archive according to current operational priorities. |
-| **Integrated Image Preview** | Instant visual verification without opening external applications: faster decisions. |
-| **Exclusion Configuration** | Clean and relevant catalogs: zero noise, maximum relevance of results. |
-| **100% Local Operation** | No data leaves the machine: full confidentiality and no recurring costs. |
+| **Recursive Folder Scanning** | Complete indexing of entire directory trees in a single automated pass. |
+| **Persistent Local Cataloging** | Data remains saved and queryable over time: no repeated scans, no lost metadata. |
+| **Search by Name, Extension & Path** | Instant retrieval of any file: cutting search times from minutes to seconds. |
+| **Multi-Criteria Sorting** (name, type, extension, size, date, path, root) | Analyze and audit archives according to current operational priorities. |
+| **Integrated Image Preview** | Immediate visual verification directly in the browser for faster decision-making. |
+| **Exclusion Configuration** | Clean, high-signal catalogs with zero noise. |
+| **100% Local Execution** | Zero data leaves the machine: full GDPR/NDA confidentiality and zero recurring fees. |
 
-**Immediate ROI:** For a team that loses even 15 minutes a day searching for files, productivity recovery translates into dozens of hours saved each year, with a single local installation and zero subscriptions.
+**Immediate ROI:** For a team losing even 15 minutes per day searching for files, productivity recovery translates into dozens of hours saved annually through a single local deployment and zero monthly subscriptions.
 
-## Technologies Used (High Level)
+## High-Level Architecture & Stack
 
-- **Linux** — Native execution platform: enterprise-grade stability, security, and operational reliability.
-- **Python** — Mature, high-performance language for local processing, ideal for reliable, long-running automations.
-- **SQLite** — Built-in local database: robust persistence, zero configuration, zero maintenance.
-- **Web Interface (Browser)** — Instant access from any browser, without installing additional clients.
-
-This combination ensures a lightweight, responsive, and self-sustaining application: a software asset that works in the background for the company, without requiring external infrastructure.
+- **Linux** — Native execution environment delivering enterprise stability, security, and predictable resource usage.
+- **Python 3.12+** — High-performance local filesystem traversal and metadata extraction engine.
+- **SQLite** — Embedded, zero-configuration relational database for fast local persistence.
+- **Browser Web Interface** — Instant access from any local browser without installing desktop clients.
 
 ## Requirements
 
-- Operating system **Linux**
+- **Linux** Operating System
 - **Python 3.12+** (recommended)
 
-## Confidentiality Notice
+## Confidentiality Notice & B2B Licensing
 
-🔒 **Proprietary Software Asset:** This repository is intended for functional presentation within the Professional Portfolio [https://antoniangeloflore.com]. For operational security reasons and Non-Disclosure Agreements (NDAs), the source code and underlying infrastructure specifications are not publicly exposed.
+🔒 **Proprietary Software Asset (All Rights Reserved):** This repository serves as a functional and architectural showcase within the Professional Portfolio ([https://antoniangeloflore.com](https://antoniangeloflore.com)). For operational security and NDA compliance, the source code and internal implementation details are not publicly exposed.
 
---------------------------
-🇮🇹 ITALIANO 🇮🇹
-# Catalogatore File
+🤝 **Custom Deployment & White-Label Inquiries:** Available for custom B2B integration, white-label agency licensing, and asynchronous technical consultations (no calls required). Reach out via [antoniangeloflore.com](https://antoniangeloflore.com) or [LinkedIn](https://www.linkedin.com/in/antoniangeloflore/).
+
+---
+
+<a name="-italiano"></a>
+## 🇮🇹 ITALIANO
+
+# Catalogatore File — Motore Locale di Indicizzazione Documentale ad Alte Prestazioni
 
 ## Panoramica del Prodotto
 
@@ -83,7 +91,7 @@ In ogni azienda reale, la gestione manuale dei file genera costi nascosti e coll
 - **Mancanza di visibilità:** impossibile rispondere rapidamente a domande come *"quanti file di questo tipo abbiamo?"* o *"dove si trova l'ultima versione?"*.
 - **Dipendenza da strumenti esterni:** soluzioni cloud che espongono dati sensibili e impongono costi ricorrenti.
 
-Catalogatore File elimina questi attriti: una sola scansione trasforma il filesystem locale in un archivio strutturato, consultabile e ordinabile in tempo reale.
+**Catalogatore File** elimina questi attriti: una sola scansione trasforma il filesystem locale in un archivio strutturato, consultabile e ordinabile in tempo reale.
 
 ## Come Funziona (Flusso Operativo Utente)
 
@@ -116,7 +124,7 @@ Il risultato finale: un archivio completo, ricercabile e visivamente consultabil
 ## Tecnologie Utilizzate (Ad Alto Livello)
 
 - **Linux** — Piattaforma nativa di esecuzione: stabilità, sicurezza e affidabilità operativa di livello enterprise.
-- **Python** — Linguaggio maturo e performante per l'elaborazione locale, ideale per automazioni affidabili e di lunga durata.
+- **Python 3.12+** — Linguaggio maturo e performante per l'elaborazione locale, ideale per automazioni affidabili e di lunga durata.
 - **SQLite** — Database locale integrato: persistenza solida, zero configurazione, zero manutenzione.
 - **Interfaccia Web (browser)** — Accessibilità immediata da qualsiasi browser, senza installazione di client aggiuntivi.
 
@@ -127,6 +135,8 @@ Questa combinazione garantisce un'applicazione leggera, reattiva e autosufficien
 - Sistema operativo **Linux**
 - **Python 3.12+** (consigliato)
 
-## Nota di Riservatezza
+## Nota di Riservatezza & Collaborazioni B2B
 
-🔒 **Asset Software Proprietario:** Questo repository ha finalità di presentazione funzionale per il Portfolio Professionale (antoniangeloflore.com). Per ragioni di sicurezza operativa e accordi di riservatezza (NDA), il codice sorgente e le specifiche infrastrutturali non sono esposti pubblicamente.
+🔒 **Asset Software Proprietario (Tutti i diritti riservati):** Questo repository ha finalità di presentazione funzionale e architetturale per il Portfolio Professionale ([https://antoniangeloflore.com](https://antoniangeloflore.com)). Per ragioni di sicurezza operativa e accordi di riservatezza (NDA), il codice sorgente e le specifiche infrastrutturali non sono esposti pubblicamente.
+
+🤝 **Sviluppo Custom & Licensing White-Label:** Disponibile per integrazioni B2B su misura, licenze White-Label per agenzie e consulenze tecniche asincrone (zero call). Contatti su [antoniangeloflore.com](https://antoniangeloflore.com) o su [LinkedIn](https://www.linkedin.com/in/antoniangeloflore/).
