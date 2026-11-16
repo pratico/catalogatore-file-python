@@ -1,6 +1,6 @@
 # Catalogatore File
 
-🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENGLISH 🏴󠁧󠁢󠁥󠁮󠁧󠁿
+🇬🇧 / 🇺🇸 ENGLISH 
 ## Product Overview
 
 **File Cataloger** is a private, local application for Linux systems, accessible directly from the browser, designed to index, catalog, and search the entire contents of any folder on the system in seconds.
