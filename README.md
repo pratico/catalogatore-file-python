@@ -54,8 +54,8 @@ The result: a complete, searchable, and visually browsable archive obtained in a
 ## High-Level Architecture & Stack
 
 - **Linux** — Native execution environment delivering enterprise stability, security, and predictable resource usage.
-- **Python 3.12+** — High-performance local filesystem traversal and metadata extraction engine.
-- **SQLite** — Embedded, zero-configuration relational database for fast local persistence.
+- **Python 3.12+ & FastAPI** — High-performance local filesystem traversal, REST endpoints, and cryptographic **SHA-256 hashing** for deterministic duplicate file detection.
+- **SQLite** — Embedded, zero-configuration relational database for fast local persistence, bulk tagging, and rating.
 - **Browser Web Interface** — Instant access from any local browser without installing desktop clients.
 
 ## Requirements
@@ -124,8 +124,8 @@ Il risultato finale: un archivio completo, ricercabile e visivamente consultabil
 ## Tecnologie Utilizzate (Ad Alto Livello)
 
 - **Linux** — Piattaforma nativa di esecuzione: stabilità, sicurezza e affidabilità operativa di livello enterprise.
-- **Python 3.12+** — Linguaggio maturo e performante per l'elaborazione locale, ideale per automazioni affidabili e di lunga durata.
-- **SQLite** — Database locale integrato: persistenza solida, zero configurazione, zero manutenzione.
+- **Python 3.12+ & FastAPI** — Motore ad alte prestazioni per l'indicizzazione locale e l'individuazione matematica dei file duplicati tramite **hash SHA-256**.
+- **SQLite** — Database locale integrato: persistenza solida, tagging/rating massivo, zero configurazione e zero manutenzione.
 - **Interfaccia Web (browser)** — Accessibilità immediata da qualsiasi browser, senza installazione di client aggiuntivi.
 
 Questa combinazione garantisce un'applicazione leggera, reattiva e autosufficiente: un asset software che lavora in background per l'azienda, senza richiedere infrastrutture esterne.
