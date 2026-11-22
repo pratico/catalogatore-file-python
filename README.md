@@ -65,7 +65,7 @@ The result: a complete, searchable, and visually browsable archive obtained in a
 
 ## Confidentiality Notice & B2B Licensing
 
-🔒 **Proprietary Software Asset (All Rights Reserved):** This repository serves as a functional and architectural showcase within the Professional Portfolio ([https://antoniangeloflore.com](https://antoniangeloflore.com) — *Italian portal & video demos; English B2B delivery*). For operational security and NDA compliance, the source code and internal implementation details are not publicly exposed.
+🔒 **Proprietary Software Asset (All Rights Reserved)**: This repository serves as a functional and architectural showcase within the Professional Portfolio (https://antoniangeloflore.com — **note:** *video pitches are currently in Italian; both the portfolio portal and B2B technical delivery are available in English*). For operational security and NDA compliance, the source code and internal packaging are not publicly exposed.
 
 🤝 **Custom Deployment & White-Label Inquiries:** Available for custom B2B integration, white-label agency licensing, and asynchronous technical consultations (no calls required). Reach out via [antoniangeloflore.com](https://antoniangeloflore.com) or [LinkedIn](https://www.linkedin.com/in/antoniangelo-f-30003622/).
 
